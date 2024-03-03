@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <section class="sidebar">
+      <a href="#" class="logo">
+        <i class="fab fa-slack"></i>
+        <span class="text">Admin Panel</span>
+      </a>
+
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="#" class="nav-link">
+            <i class="fas fa-border-all"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-school"></i>
+            <span class="text">Trường</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-question"></i>
+            <span class="text">Câu hỏi</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class="fas fa-message"></i>
+            <span class="text">Hội thoại</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class="fas fa-people-group"></i>
+            <span class="text">Nhóm</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="side-menu">
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="text">Cài đặt</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout">
+            <i class="fas fa-right-from-bracket"></i>
+            <span class="text">Đăng xuất</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <nav>
+        <i class="fas fa-bars menu-btn"></i>
+        <a href="#" class="nav-link">Danh mục</a>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="tìm kiếm..." />
+            <button class="search-btn">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </div>
+        </form>
+
+        <input type="checkbox" hidden id="switch-mode" />
+        <label for="switch-mode" class="switch-mode"></label>
+
+        <a href="#" class="notification">
+          <i class="fas fa-bell"></i>
+          <span class="num">28</span>
+        </a>
+
+        <a href="#" class="profile">
+          <img src="profile.png" alt="" />
+        </a>
+      </nav>
+
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <i class="fas fa-chevron-right"></i>
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <a href="#" class="download-btn">
+            <i class="fas fa-cloud-download-alt"></i>
+            <span class="text">Download Report</span>
+          </a> -->
+        </div>
+
+        <div class="box-info">
+          <li>
+            <i class="fa-solid fa-plus"></i>
+            <span class="text">
+              <h3>15K</h3>
+              <p>Tạo kỳ thi</p>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-minus"></i>
+            <span class="text">
+              <h3>100</h3>
+              <p>Xóa kỳ thi</p>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-eraser"></i>
+            <span class="text">
+              <h3>90</h3>
+              <p>Chỉnh sửa kỳ thi</p>
+            </span>
+          </li>
+        </div>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Bảng xếp hạng</h3>
+              <i class="fa-solid fa-user-minus"></i>
+              <i class="fa-solid fa-user-plus"></i>
+              <i class="fas fa-search"></i>
+              <i class="fas fa-filter"></i>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Người dùng</th>
+                  <th>Truy cập</th>
+                  <th>Trạng thái</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="profile.png" alt="" />
+                    <p>Emily</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status pending">Trung bình</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="profile.png" alt="" />
+                    <p>Benjamin</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status pending">Trung bình</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="profile.png" alt="" />
+                    <p>Sophia</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status process">Hoàn thành</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="profile.png" alt="" />
+                    <p>Alexander</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status process">Hoàn thành</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="profile.png" alt="" />
+                    <p>Olivia</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status complete">Rất xuất sắc</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="todo">
+            <div class="head">
+              <h3>Kết quả</h3>
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-filter"></i>
+            </div>
+            <div class="chart-container">
+              <div class="chart"></div>
+            </div>
+            <p><i class="fa-solid fa-square"></i>Chưa hoàn thành</p>
+            <p></p>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
